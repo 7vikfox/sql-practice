@@ -2,7 +2,7 @@
 # My SQL Learning Journey
 
 Hi there 👋
-I’m currently learning **SQL** and building hands-on practice queries to strengthen my skills and grow as a database developer.
+I’m currently learning **SQL** and building hands-on practice queries to strengthen my skills
 This repository is part of my practice and showcases my progress step by step.
 
 
