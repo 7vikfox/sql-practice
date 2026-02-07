@@ -10,9 +10,12 @@ This repository is part of my practice and showcases my progress step by step.
 ## 📚 What I'm Doing
 
 * Practicing and learning SQL basics such as SELECT, INSERT, UPDATE, DELETE, and WHERE clauses
-*Writing and executing queries to explore, analyze, and manipulate sample databases
-*Solving simple and beginner-level SQL challenges to improve problem-solving skills
-*Using GitHub to document, track, and share my SQL learning journey and practice work
+
+* Writing and executing queries to explore, analyze, and manipulate sample databases
+
+* Solving simple and beginner-level SQL challenges to improve problem-solving skills
+
+* Using GitHub to document, track, and share my SQL learning journey and practice work
 
 
 
