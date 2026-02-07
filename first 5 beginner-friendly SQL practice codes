@@ -1,19 +1,30 @@
--- 1. View all data from the students table
+/* 1. View all data from the students table */
 SELECT * FROM students;
 
--- 2. Insert a new student into the table
+/* 2. Insert a new student into the table */
 INSERT INTO students (id, name, age, grade) 
 VALUES (1, 'Alex', 20, 'A');
 
--- 3. Update Alex's grade to B
+/* 3. Update Alex's grade to B */
 UPDATE students
 SET grade = 'B'
 WHERE name = 'Alex';
 
--- 4. Delete student Alex from the table
+/* 4. Delete student Alex from the table */
 DELETE FROM students
 WHERE name = 'Alex';
 
--- 5. Show students older than 18
+/* 5. Show students older than 18 */
 SELECT * FROM students
 WHERE age > 18;
+
+/* 6. Show students ordered by age (youngest to oldest) */
+SELECT * FROM students
+ORDER BY age ASC;
+
+/* 7. Count total number of students in the table */
+SELECT COUNT(*) AS total_students
+FROM students;
+
+-- Single line comment 
+/* double line comment*/
