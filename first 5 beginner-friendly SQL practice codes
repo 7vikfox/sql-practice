@@ -26,5 +26,14 @@ ORDER BY age ASC;
 SELECT COUNT(*) AS total_students
 FROM students;
 
+/* 8. Find the average age of students */
+SELECT AVG(age) AS average_age
+FROM students;
+
+/* 9. Group students by grade and count them */
+SELECT grade, COUNT(*) AS total_students
+FROM students
+GROUP BY grade;
+
 -- Single line comment 
 /* double line comment*/
