@@ -35,5 +35,9 @@ SELECT grade, COUNT(*) AS total_students
 FROM students
 GROUP BY grade;
 
+/* 10. Find the maximum age of students */
+SELECT MAX(age) AS oldest_student
+FROM students;
+
 -- Single line comment 
 /* double line comment*/
