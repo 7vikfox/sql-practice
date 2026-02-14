@@ -39,5 +39,9 @@ GROUP BY grade;
 SELECT MAX(age) AS oldest_student
 FROM students;
 
+/* 11. Find the minimum age of students */
+SELECT MIN(age) AS youngest_student
+FROM students;
+
 -- Single line comment 
 /* double line comment*/
