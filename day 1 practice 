@@ -1,0 +1,24 @@
+-- Day 1 SQL Practice
+
+-- Show all students
+SELECT *
+FROM students;
+
+-- Show name and marks
+SELECT name, marks
+FROM students;
+
+-- Students with marks > 85
+SELECT name, marks
+FROM students
+WHERE marks > 85;
+
+-- Students from Delhi
+SELECT name, city
+FROM students
+WHERE city = 'Delhi';
+
+-- Students from Delhi AND age > 21
+SELECT name, city, age
+FROM students
+WHERE city = 'Delhi' AND age > 21;
