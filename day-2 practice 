@@ -1,0 +1,22 @@
+-- Day 02: WHERE, OR, ORDER BY practice
+
+-- Students from Delhi or Mumbai
+SELECT name, city
+FROM students
+WHERE city = 'Delhi' OR city = 'Mumbai';
+
+-- Students with marks > 90 or < 80
+SELECT name, marks
+FROM students
+WHERE marks > 90 OR marks < 80;
+
+-- Sort students by marks descending
+SELECT name, marks
+FROM students
+ORDER BY marks DESC;
+
+-- Filter and sort together
+SELECT name, marks
+FROM students
+WHERE city = 'Delhi' OR city = 'Mumbai'
+ORDER BY marks DESC;
