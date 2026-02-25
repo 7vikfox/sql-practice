@@ -1,0 +1,63 @@
+-- SQL Learning Day 3
+
+-- 1. DISTINCT (remove duplicate values)
+SELECT DISTINCT city
+FROM students;
+
+
+-- 2. LIMIT (show limited rows)
+SELECT *
+FROM students
+LIMIT 3;
+
+
+-- LIMIT with ORDER BY (Top 3 highest marks)
+SELECT name, marks
+FROM students
+ORDER BY marks DESC
+LIMIT 3;
+
+
+-- 3. IN (match multiple values)
+SELECT name, city
+FROM students
+WHERE city IN ('Delhi', 'Mumbai');
+
+
+-- 4. NOT IN (exclude values)
+SELECT name, city
+FROM students
+WHERE city NOT IN ('Delhi', 'Lucknow');
+
+
+-- 5. BETWEEN (range of values)
+SELECT name, marks
+FROM students
+WHERE marks BETWEEN 80 AND 100;
+
+
+-- BETWEEN with AND condition
+SELECT name, city, marks
+FROM students
+WHERE city = 'Delhi'
+AND marks BETWEEN 80 AND 100;
+
+
+-- Extra practice examples
+
+-- Marks IN specific values
+SELECT name, marks
+FROM students
+WHERE marks IN (90, 95, 100);
+
+
+-- Marks NOT IN specific values
+SELECT name, marks
+FROM students
+WHERE marks NOT IN (90, 95, 100);
+
+
+-- Age BETWEEN range
+SELECT name, age
+FROM students
+WHERE age BETWEEN 18 AND 22;
