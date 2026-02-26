@@ -1,0 +1,63 @@
+-- SQL Learning Day 4
+-- Topics: LIKE, IS NULL, IS NOT NULL
+
+-- 1. Names starting with 'A'
+SELECT name
+FROM students
+WHERE name LIKE 'A%';
+
+
+-- 2. Names ending with 'n'
+SELECT name
+FROM students
+WHERE name LIKE '%n';
+
+
+-- 3. Names containing 'am'
+SELECT name
+FROM students
+WHERE name LIKE '%am%';
+
+
+-- 4. Students from Delhi whose name starts with 'R'
+SELECT name, city
+FROM students
+WHERE city = 'Delhi' AND name LIKE 'R%';
+
+
+-- 5. Students whose city is NULL
+SELECT name, city
+FROM students
+WHERE city IS NULL;
+
+
+-- 6. Students whose city is NOT NULL
+SELECT name, city
+FROM students
+WHERE city IS NOT NULL;
+
+
+-- 7. Students whose marks are between 70 and 90 AND city is NOT NULL
+SELECT name, marks
+FROM students
+WHERE city IS NOT NULL AND marks BETWEEN 70 AND 90;
+
+
+-- Extra practice examples
+
+-- Names starting with 'S'
+SELECT name
+FROM students
+WHERE name LIKE 'S%';
+
+
+-- Names ending with 'a'
+SELECT name
+FROM students
+WHERE name LIKE '%a';
+
+
+-- Names containing 'ar'
+SELECT name
+FROM students
+WHERE name LIKE '%ar%';
