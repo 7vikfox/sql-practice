@@ -1,0 +1,79 @@
+-- SQL Learning Day 5
+-- Topic: Aggregate Functions
+
+-- Aggregate functions perform calculations on multiple rows
+-- and return a single value.
+
+-------------------------------------------------------
+-- 1. COUNT() → Counts number of rows
+-------------------------------------------------------
+
+-- Count all students
+SELECT COUNT(*)
+FROM students;
+
+-- Count students from Delhi
+SELECT COUNT(*)
+FROM students
+WHERE city = 'Delhi';
+
+
+-------------------------------------------------------
+-- 2. MAX() → Returns highest value
+-------------------------------------------------------
+
+-- Highest marks
+SELECT MAX(marks)
+FROM students;
+
+-- Highest marks from Mumbai
+SELECT MAX(marks)
+FROM students
+WHERE city = 'Mumbai';
+
+
+-------------------------------------------------------
+-- 3. MIN() → Returns lowest value
+-------------------------------------------------------
+
+-- Lowest marks
+SELECT MIN(marks)
+FROM students;
+
+
+-------------------------------------------------------
+-- 4. AVG() → Returns average value
+-------------------------------------------------------
+
+-- Average marks
+SELECT AVG(marks)
+FROM students;
+
+-- Average age
+SELECT AVG(age)
+FROM students;
+
+
+-------------------------------------------------------
+-- 5. SUM() → Returns total
+-------------------------------------------------------
+
+-- Total marks
+SELECT SUM(marks)
+FROM students;
+
+
+-------------------------------------------------------
+-- Important Notes
+-------------------------------------------------------
+
+-- COUNT(*) counts rows
+-- COUNT(column_name) counts non-null values only
+
+-- Aggregate functions return ONE single value
+-- unless used with GROUP BY (we will learn later)
+
+-- Functions always use brackets:
+-- MAX(column)
+-- AVG(column)
+-- SUM(column)
