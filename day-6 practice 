@@ -1,0 +1,82 @@
+-- SQL Learning
+-- Topic: WHERE + ORDER BY Combination
+
+-------------------------------------------------------
+-- 1. WHERE Clause
+-------------------------------------------------------
+
+-- Used to filter rows based on condition
+
+SELECT name, marks
+FROM students
+WHERE marks > 75;
+
+-- Execution flow:
+-- FROM -> WHERE -> SELECT
+
+
+-------------------------------------------------------
+-- 2. ORDER BY Clause
+-------------------------------------------------------
+
+-- Used to sort results
+
+-- Ascending order (default)
+SELECT name, marks
+FROM students
+ORDER BY marks ASC;
+
+-- Descending order
+SELECT name, marks
+FROM students
+ORDER BY marks DESC;
+
+-- Note:
+-- ASC = lowest to highest
+-- DESC = highest to lowest
+-- Do NOT use quotes around ASC or DESC
+
+
+-------------------------------------------------------
+-- 3. WHERE + ORDER BY Together
+-------------------------------------------------------
+
+-- Filter first, then sort
+
+SELECT name, marks
+FROM students
+WHERE marks > 75
+ORDER BY marks DESC;
+
+-- Example 2
+
+SELECT name, city, marks
+FROM students
+WHERE city = 'Delhi'
+ORDER BY marks ASC;
+
+-- Important:
+-- WHERE always comes before ORDER BY
+
+
+-------------------------------------------------------
+-- 4. Multiple Conditions + ORDER BY
+-------------------------------------------------------
+
+SELECT name, city, marks
+FROM students
+WHERE city = 'Delhi' AND marks > 70
+ORDER BY marks DESC;
+
+-------------------------------------------------------
+-- Key Rules
+-------------------------------------------------------
+
+-- 1. WHERE filters rows
+-- 2. ORDER BY sorts result
+-- 3. Execution order:
+--    FROM
+--    WHERE
+--    ORDER BY
+-- 4. Text values must be inside quotes ('Delhi')
+-- 5. ASC and DESC should NOT be inside quotes
