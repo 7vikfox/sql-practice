@@ -1,5 +1,5 @@
-📌 Problem: Product Sales Analysis I
-🧾 Description
+Problem: Product Sales Analysis I
+Description
 
 Given two tables:
 
@@ -24,7 +24,7 @@ product_id is the primary key
 Each row in Sales represents a product sale in a given year.
 The price is per unit.
 
-🎯 Objective
+Objective
 
 Write a query to report:
 
@@ -36,12 +36,12 @@ for each sale in the Sales table.
 
 Return the result in any order.
 
-💡 Approach
+Approach
 Join Sales and Product tables using product_id
 Select required fields from both tables
 Use an INNER JOIN since all product_id values in Sales exist in Product
 
-🧠 SQL Solution
+ SQL Solution
 
 SELECT p.product_name, s.year, s.price
 FROM Sales s
